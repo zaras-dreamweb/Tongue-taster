@@ -15,10 +15,12 @@ const MealDetail = () => {
     return (
         <div>
             <h1 className='text-2xl h-20 mt-20 font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-300  to-blue-900'>Meal detail about: {id}</h1>
-            <div className="main-div grid grid-cols-1 md:grid-cols-2">
+            <div className="main-div mx-auto pt-20 pb-24 px-4 md:px-2 max-w-7xl grid grid-cols-1 md:grid-cols-2 justify-items-center content-center">
 
-                <img className='w-80 h-80 ml-60 mt-20 border-4' src={meal.strMealThumb} alt="" />
-                <div className="info text-2xl mt-40 mr-40">
+                <div className="img-div flex justify-center items-center w-80 h-80 border-4">
+                    <img src={meal.strMealThumb} alt="" />
+                </div>
+                <div className="info text-2xl pt-16">
                     <h2><strong>Name:</strong> {meal.strMeal}</h2>
                     <h2><strong>Serving Category:</strong> {meal.strCategory}</h2>
                     <h2><strong>Country of Origin:</strong> {meal.strArea}</h2>
