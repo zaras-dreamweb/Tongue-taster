@@ -1,0 +1,19 @@
+.meal-container{
+    width:400px;
+    height: 500px;
+    margin-left: 70px;
+    border: 2px solid gray;
+    position: relative;
+    
+}
+
+.button{
+    width: 100%;
+    background-color: blueviolet;
+    padding: 10px;
+    padding-left: 150px;
+    position: absolute;
+    display: flex;
+    bottom: 0;
+   
+}
